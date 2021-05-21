@@ -14,3 +14,4 @@ alias pip=pip3
 alias firefox-restart="pkill firefox-esr && sleep 2 && nohup firefox-esr &"
 
 alias venv="python -m venv"
+
