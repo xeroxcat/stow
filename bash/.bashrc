@@ -2,7 +2,7 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-export PATH=”$HOME/doom-emacs/.emacs.d/bin:$PATH”
+#export PATH=”$HOME/doom-emacs/.emacs.d/bin:$PATH”
 
 # Load System-Specific Configs
 if [ -f ~/.fetch_shell ]; then
@@ -10,7 +10,7 @@ if [ -f ~/.fetch_shell ]; then
 fi
 
 if [ -f ~/.laptop_shell ]; then
-    . ~/.labtop_shell
+    . ~/.laptop_shell
 fi
 
 ##      VV ~~DEFAULT PREFERENCES~~ VV

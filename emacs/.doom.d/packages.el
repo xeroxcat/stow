@@ -50,8 +50,9 @@
 ;(unpin! t)
 
 ;;; Code:
-(package! prolog
-  :recipe (:local-repo "packages"))
+
+;; (package! prolog
+;;   :recipe (:local-repo "packages"))
 
 (package! buffer-move)
 
