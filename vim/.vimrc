@@ -129,7 +129,8 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
-colorscheme peachpuff
+" colorscheme peachpuff
+set t_Co=16`
 highlight LineNr ctermfg=darkgrey cterm=bold 
 highlight CursorLineNr ctermfg=grey cterm=bold 
 highlight Comment ctermfg=8 

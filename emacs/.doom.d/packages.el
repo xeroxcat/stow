@@ -60,4 +60,8 @@
 (package! ttl-mode
   :recipe (:host github :repo "jeeger/ttl-mode"))
 
+;; interpret ANSI escape sequences in any buffer
+;; https://github.com/atomontage/xterm-color
+(package! xterm-color)
+
 ;;; packages.el ends here

@@ -192,3 +192,5 @@ client.background       $COLOR15
 exec --no-startup-id xmodmap -e 'keycode 135 = Super_R' && xset -r 135
 
 bindsym Print exec "gnome-screenshot -a"
+
+exec xrdb -merge ~/.Xresources

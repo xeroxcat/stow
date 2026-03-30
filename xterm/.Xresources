@@ -1,5 +1,11 @@
+! XRESOURCES EASY TO MISS STUFF
+! . specifies a subclass or a direct resource of the class
+! * applies to the resource of the class and/or any subclasses
+! * with no preceeding class (i think) matches the property on all classes
+
 ! custom colors
 #include ".Xresources.d/colorscheme"
+
 xterm*background: BACKGROUND
 xterm*foreground: FOREGROUND
 
@@ -22,8 +28,13 @@ xterm*color15: COLOR15
 
 XTerm*bellIsUrgent: true
 
-! font settings
 XTerm*termName:		xterm-256color
+
+! Sixel support
+XTerm*decTerminalID: 340
+
+! font settings
+! bitmap fonts are cool until we start hitting unicode
 !xterm*font:           -*-courier-medium-r-*-*-12-*-*-*-*-*-iso10646-1
 !xterm*boldFont:  -*-courier-bold-r-*-*-12-*-100-*-*-*-iso10646-1
 !xterm*font: -bitstream-courier 10 pitch-medium-r-*-*-*-*-0-*-*-*-*-standard
@@ -43,7 +54,14 @@ Xft.autohint: false
 Xft.hintstyle: hintnone
 Xft.lcdfilter: lcddefault
 
+! maybe underscores are more consistiently visible? (YES)
+XTerm*scaleHeight: 1.01
 
 ! fixes alt/meta
 XTerm*eightBitOutput: true
 XTerm*eightBitInput: false
+
+! shift up and shift down to scroll one line
+XTerm.VT100.translations: #override \
+    Shift <Key>Up: scroll-back(1) \n\
+    Shift <Key>Down: scroll-forw(1) 
